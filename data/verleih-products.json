@@ -1,0 +1,81 @@
+{
+  "equipment": [
+    {
+      "id": "tauchanzug-1",
+      "title": "Tauchanzug 7mm",
+      "category": "Anzüge",
+      "priceDay": 25,
+      "priceWeek": 150,
+      "available": true,
+      "description": "Warm und flexibel, ideal für gemäßigte Gewässer.",
+      "features": ["7mm Neopren", "Hohe Wärmeisolation", "Einfacher Reißverschluss"],
+      "image": "/images/tauchanzug.jpg"
+    },
+    {
+      "id": "tauchmaske-1",
+      "title": "Tauchmaske mit Schnorchel",
+      "category": "Masken",
+      "priceDay": 5,
+      "priceWeek": 30,
+      "available": true,
+      "description": "Klare Sicht unter Wasser mit komfortablem Sitz.",
+      "features": ["Gehärtetes Glas", "Silikonrand", "Integrierter Schnorchel"],
+      "image": "/images/tauchmaske.jpg"
+    },
+    {
+      "id": "flossen-1",
+      "title": "Geräteflossen",
+      "category": "Flossen",
+      "priceDay": 10,
+      "priceWeek": 60,
+      "available": true,
+      "description": "Effiziente Kraftübertragung für schnellen Vortrieb.",
+      "features": ["Verstellbare Größe", "Robustes Material", "Ergonomisches Design"],
+      "image": "/images/flossen.jpg"
+    },
+    {
+      "id": "atemregler-1",
+      "title": "Atemregler Set",
+      "category": "Atemregler",
+      "priceDay": 35,
+      "priceWeek": 210,
+      "available": true,
+      "description": "Zuverlässige Luftversorgung in allen Tiefen.",
+      "features": ["Erste und zweite Stufe", "Oktopus", "Manometer"],
+      "image": "/images/atemregler.jpg"
+    },
+    {
+      "id": "bcd-1",
+      "title": "Tarierweste (BCD)",
+      "category": "Jackets",
+      "priceDay": 20,
+      "priceWeek": 120,
+      "available": true,
+      "description": "Optimaler Komfort und Kontrolle unter Wasser.",
+      "features": ["Integrierte Bleitaschen", "Schnellablässe", "Robuste Bauweise"],
+      "image": "/images/bcd.jpg"
+    },
+    {
+      "id": "tauchcomputer-1",
+      "title": "Tauchcomputer",
+      "category": "Computer",
+      "priceDay": 15,
+      "priceWeek": 90,
+      "available": true,
+      "description": "Alle wichtigen Daten auf einen Blick.",
+      "features": ["Tiefenmesser", "Tauchzeit", "Dekompression"],
+      "image": "/images/tauchcomputer.jpg"
+    },
+    {
+      "id": "lampe-1",
+      "title": "Tauchlampe",
+      "category": "Zubehör",
+      "priceDay": 8,
+      "priceWeek": 48,
+      "available": true,
+      "description": "Helle Ausleuchtung für Nachttauchgänge und dunkle Umgebungen.",
+      "features": ["Wasserdicht bis 100m", "LED Technologie", "Lange Akkulaufzeit"],
+      "image": "/images/tauchlampe.jpg"
+    }
+  ]
+}
