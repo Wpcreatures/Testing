@@ -1,4 +1,4 @@
-import { graphQLClient } from "@/lib/wp-client"
+import { graphQLClient } from "@/lib/graphql"
 import { gql } from "graphql-request"
 
 const query = gql`
@@ -14,6 +14,10 @@ const query = gql`
 `
 
 export default async function Home() {
+  if (!graphQLClient) {
+    return <div className="p-4 text-red-600">GraphQL endpoint not configured.</div>
+  }
+
   const data = await graphQLClient.request(query)
   const posts = data.posts.nodes
 
