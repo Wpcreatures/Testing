@@ -1,19 +1,30 @@
-import Navigation from "@/components/navigation"
-import HeroSection from "@/components/hero-section"
-import CoursesSection from "@/components/courses-section"
-import RentalSection from "@/components/rental-section"
-import ContactSection from "@/components/contact-section"
-import Footer from "@/components/footer"
+import { graphQLClient } from "@/lib/graphql"
+import { gql } from "graphql-request"
 
-export default function HomePage() {
+const query = gql`
+  {
+    posts {
+      nodes {
+        id
+        title
+        slug
+      }
+    }
+  }
+`
+
+export default async function Home() {
+  const data = await graphQLClient.request(query)
+  const posts = data.posts.nodes
+
   return (
-    <main className="min-h-screen">
-      <Navigation />
-      <HeroSection />
-      <CoursesSection />
-      <RentalSection />
-      <ContactSection />
-      <Footer />
-    </main>
+    <div className="p-4">
+      <h1 className="text-xl font-bold mb-4">WordPress Posts</h1>
+      <ul className="list-disc pl-5">
+        {posts.map((post: any) => (
+          <li key={post.id}>{post.title}</li>
+        ))}
+      </ul>
+    </div>
   )
 }
