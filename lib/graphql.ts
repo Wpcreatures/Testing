@@ -1,5 +1,9 @@
 import { GraphQLClient } from 'graphql-request'
 
-const endpoint = 'https://mudassarjamil.com/graphql'
+const endpoint = process.env.WP_GRAPHQL_API
 
-export const wpClient = new GraphQLClient(endpoint)
+if (!endpoint) {
+  throw new Error("WP_GRAPHQL_API is not defined in environment variables")
+}
+
+export const graphQLClient = new GraphQLClient(endpoint)
