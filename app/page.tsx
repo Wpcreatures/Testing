@@ -1,4 +1,4 @@
-import { graphQLClient } from "@/lib/graphql"
+import { graphQLClient } from "@/lib/wp-client"
 import { gql } from "graphql-request"
 
 const query = gql`
